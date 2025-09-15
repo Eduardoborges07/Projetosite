@@ -1,5 +1,6 @@
 
 .menu {
+    font-family: Fjalla One;
     list-style: none;
     border: 2px solid black;
     float: left;
@@ -18,7 +19,7 @@
 .menu li a:hover {
     background: rgb(5, 5, 5);
     color: rgb(237, 237, 241);
-    box-shadow: 3px 10px rgb(0, 0, 0);
+    box-shadow: 3px 10px rgb(245, 242, 242);
     text-shadow: 5px 2px 5px blue;
 }
 .menu li ul {
