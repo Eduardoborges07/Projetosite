@@ -163,5 +163,48 @@ img, video {
     padding: 1rem 0;
     font-size: 0.9rem;
 }
+/* --- ESTILOS PARA A PÁGINA DE NOTÍCIAS --- */
+
+/* Título principal da página de notícias */
+.titulo-pagina {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Estilo para cada bloco/card de notícia */
+.noticia-card {
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #00c853; /* Borda verde para dar um destaque */
+}
+
+.noticia-card h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #004d40;
+}
+
+.noticia-card p {
+    margin-bottom: 1rem;
+    line-height: 1.7; /* Aumenta o espaçamento entre linhas para melhor leitura */
+}
+
+.noticia-card figure {
+    margin: 1.5rem 0 0 0; /* Espaçamento acima da imagem */
+    text-align: center;
+}
+
+.noticia-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
 
