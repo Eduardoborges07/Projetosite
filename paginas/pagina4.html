@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Diário do Craque</title>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../icones/emoji_people_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Diário do Craque</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="../paginas/pagina1.html">Últimas Notícias</a></li>
+                <li><a href="../pagina2.html">Recordes</a></li>
+                <li><a href="../pagina3.html">Maior Time</a></li>
+                <li><a href="pagina4.html">Cadastro</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="titulo-pagina">Cadastro simples</h1>
+    <article class="noticia-card">
+        <p>Venha fazer parte do nosso site!
+Para participar, pedimos que você preencha o formulário de cadastro abaixo. Assim, poderemos enviar notificações sobre as próximas notícias e mantê-lo informado sobre novas páginas e conteúdos que estarão disponíveis no futuro.</p>
+    <p>Além de receber novidades em primeira mão, você também terá acesso a conteúdos exclusivos e poderá interagir de forma mais próxima com tudo o que estamos preparando. Nosso objetivo é criar uma comunidade conectada e bem informada, onde cada leitor tenha voz e espaço.</p>
+    <p>Ficar por dentro de tudo nunca foi tão fácil! Ao se cadastrar, você garante que não vai perder nenhuma atualização importante e ainda ajuda o nosso projeto a crescer. Estamos animados em ter você conosco nessa jornada de descobertas e novidades.</p>
+</article>
+
+    <main class="container">
+        <div class="noticia-card">
+            <h1 class="titulo-pagina" style="text-align: left; margin-bottom: 2rem;">Formulário de Cadastro</h1>
+            
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+        
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" minlength="8" required>
+        
+                    <label for="confirmar_senha">Confirmar Senha:</label>
+                    <input type="password" id="confirmar_senha" name="confirmar_senha" required>
+        
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento">
+        
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Contato e Endereço</legend>
+                    <label for="telefone">Telefone Celular:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+        
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco">
+                    
+                    <label for="numero_residencia">Número:</label>
+                    <input type="number" id="numero_residencia" name="numero_residencia" min="1">
+        
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade">
+        
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado">
+                        <option value="">Selecione um estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        
+                    </select>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Informações Profissionais</legend>
+                    <label for="profissao">Profissão:</label>
+                    <input type="text" id="profissao" name="profissao">
+        
+                    <label>Nível de Escolaridade:</label>
+                    <div class="radio-container">
+                        <input type="radio" id="medio" name="escolaridade" value="ensino_medio">
+                        <label for="medio">Ensino Médio</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" id="superior" name="escolaridade" value="ensino_superior">
+                        <label for="superior">Ensino Superior</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" id="pos" name="escolaridade" value="pos_graduacao">
+                        <label for="pos">Pós-Graduação</label>
+                    </div>
+                    
+                    <label for="portfolio">URL do Portfólio ou LinkedIn:</label>
+                    <input type="url" id="portfolio" name="portfolio">
+        
+                    <label for="experiencia">Anos de Experiência:</label>
+                    <input type="number" id="experiencia" name="experiencia" min="0" max="50">
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Interesses e Preferências</legend>
+                    <label>Áreas de Interesse (selecione uma ou mais):</label>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="tecnologia" name="interesses[]" value="tecnologia">
+                        <label for="tecnologia">Tecnologia</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="design" name="interesses[]" value="design">
+                        <label for="design">Design</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="marketing" name="interesses[]" value="marketing">
+                        <label for="marketing">Marketing</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="vendas" name="interesses[]" value="vendas">
+                        <label for="vendas">Vendas</label>
+                    </div>
+                    
+                    <label>Como nos conheceu?</label>
+                    <select id="como_conheceu" name="como_conheceu">
+                        <option value="">Escolha uma opção</option>
+                        <option value="redes_sociais">Redes Sociais</option>
+                        <option value="amigos">Indicação de Amigos</option>
+                        <option value="google">Busca no Google</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    
+                    <label for="cor_favorita">Cor Favorita:</label>
+                    <input type="color" id="cor_favorita" name="cor_favorita" value="#1e3a5f">
+                    
+                    <label for="volume">Nível de Satisfação (0 a 100):</label>
+                    <input type="range" id="volume" name="volume" min="0" max="100" step="1">
+                    
+                    <label for="biografia">Fale um pouco sobre você:</label>
+                    <textarea id="biografia" name="biografia" rows="6"></textarea>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Finalização</legend>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="termos" name="termos" value="aceito" required>
+                        <label for="termos">Eu li e aceito os <a href="#">termos e condições</a>.</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                        <label for="newsletter">Desejo receber novidades por e-mail.</label>
+                    </div>
+                </fieldset>
+        
+                <div class="submit-container">
+                    <input type="submit" value="Enviar Cadastro">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="rodape" id="contato">
+        <div class="container footer-content">
+            <div class="rodape-coluna">
+                <h3>Sobre Nós</h3>
+                <p>Futebol na veia é aqui</p>
+            </div>
+            <div class="rodape-coluna">
+                <h3>Redes sociais</h3>
+                <p>Instagram</p>
+                <p>@eduardoborgess._</p>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="rodape-coluna">
+                <h3>Contato</h3>
+                <p>Endereço:SQN 103 bloco J</p>
+                <p>diariodeumcraque@gmail.com</p>
+            </div>
+        </div>
+        <div class="rodape-direitos">
+            <p>Todos Direitos Reservados. Copyright &copy; 2025</p>
+        </div>
+    </footer>
+
+</body>
+</html>
